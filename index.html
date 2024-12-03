@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: orange;
+        }
+
+        .main {
+            margin-top: 30px;
+            background-color: wheat;
+            border-radius: 10px;
+            height: 550px;
+            margin-left: 30%;
+            margin-right: 30%;
+
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            border-radius: 14px;
+            font-size: 20px;
+            width: 80%;
+            margin-left: 3rem;
+            padding: 0.8rem;
+        }
+        button:hover{
+            background-color: palevioletred;
+            color: crimson;
+        }
+        .header {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .registration {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+
+        }
+        .form1 {
+            margin-left: 3rem;
+        }
+
+        .form2 {
+            margin-left: 7rem;
+        }
+
+        .form3 {
+            margin-left: 3rem;
+        }
+
+        .form4 {
+            margin-left: 7rem;
+        }
+
+        .form5 {
+            margin-left: 3rem;
+        }
+
+        .form6 {
+            margin-left: 7rem;
+        }
+
+        input {
+            height: 2rem;
+            border-radius: 10px;
+            width: 100%;
+            
+        }
+
+        label {
+            font-size: 20px;
+            color: crimson;
+        }
+
+        select {
+            height: 2rem;
+            border-radius: 10px;
+            width: 100%;
+        }
+        .footer{
+            text-align: center;
+            font-size: 20px;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <marquee behavior="" direction="margin-right">
+                <h1>Registration Form</h1>
+            </marquee>
+            <h3>Fill out the form carefully for registration</h3>
+        </div>
+
+        <form action="" class="registration" onsubmit=" return data()">
+
+            <div class="form1">
+                <label for="n1">First Name</label> <br>
+                <input type="text" name="" id="n1" placeholder="Enter your first name" required>
+            </div>
+
+            <div class="form2">
+                <label for="n2">Last Name</label> <br>
+                <input type="text" id="n2" placeholder="Enter your last name" required>
+            </div>
+
+            <div class="form3">
+                <label for="n3"> Student E-mail</label> <br>
+                <input type="text" name="" id="n3" placeholder="Enter Your email" required>
+            </div>
+
+            <div class="form4">
+                <label for="gender">Gender</label> <br>
+                <select name="gender">
+                    <option value="gender">Male</option>
+                    <option value="gender">FeMale</option>
+                    <option value="gender">Other</option>
+                </select>
+            </div>
+ 
+            <div class="form5">
+                <label for="n4">Student ID </label> <br>
+                <input type="text" name="" id="n4" placeholder="Enter your id" required>
+            </div>
+
+            <div class="form6">
+                <label for="gender">List Of Classes</label> <br>
+                <select name="">
+                    <option value="">ECE</option>
+                    <option value="">CHE</option>
+                    <option value="">MTH</option>
+                    <option value="">CSE</option>
+                </select>
+            </div>
+
+            <button type="submit">Submit</button>
+
+           
+        </form>
+        <div class="footer">
+            &copy;Created By Mr.Rohit❤️
+        </div>
+    </div>
+    
+</body>
+<script>
+    function data() {
+       var a=document.getElementById("n1").value;
+       var b=document.getElementById("n2").value;
+       var c=document.getElementById("n3").value;
+       var d=document.getElementById("n4").value;
+
+       if (a=="" || b=="" || c=="" || d=="");
+       alert ("plz fields all box");
+       return false;
+
+    }
+</script>
+
+</html>
